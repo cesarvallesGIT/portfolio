@@ -1,0 +1,86 @@
+:root {
+  --font-main: "League Spartan", sans-serif;
+  --clr-red: rgba(255,70,85,255);
+  --clr-white: #ece8e1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+ background-color: rgba(15,25,35,255);
+ font-family: var(--font-main);
+}
+.header {
+  height: 70px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-sidebar {
+  display: block;
+  height: 100vh;
+  min-height: fit-content;
+  width: 19rem;
+  background-color: var(--clr-white);
+}
+.sidebar-contact {
+  font-family: var(--font-main);
+  color: var(--clr-white);
+  background-color: var(--clr-red);
+  border: none;
+  border-radius: 5rem;
+  font-weight: bolder;
+  padding: 0.8rem 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+.sidebar-contact:hover {
+  background-color: var(--clr-white);
+  outline: solid var(--clr-red) 1px;
+  color: var(--clr-red);
+  transform: translateY(-2px);
+}
+.sidebar-music-container {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  max-width: 25rem !important;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-music-container > iframe{
+  min-width: 25rem !important;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-stop: always;
+}
+.music-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: #282828;  
+  width: 100%;
+  background-color: var(--clr-white);
+}
+.music-controls > i {
+  cursor: pointer;
+}
+#github-user-img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  object-fit: cover;
+}
+.top-nav {
+
+}
+
