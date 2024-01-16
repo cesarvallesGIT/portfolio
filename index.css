@@ -11,10 +11,14 @@ body {
  background-color: rgba(15,25,35,255);
  font-family: var(--font-main);
 }
+#app {
+  max-width: 1800px;
+  margin: auto;
+}
 .header {
   height: 70px;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,6 +59,7 @@ body {
   max-width: 25rem !important;
   display: flex;
   flex-direction: column;
+  z-index: 5;
 }
 .sidebar-music-container > iframe{
   min-width: 25rem !important;
@@ -69,9 +74,14 @@ body {
   color: #282828;  
   width: 100%;
   background-color: var(--clr-white);
+  position: relative;
+  padding: 0.2rem 0rem;
 }
 .music-controls > i {
   cursor: pointer;
+}
+.github-user-container {
+  position: relative;
 }
 #github-user-img {
   border-radius: 50%;
@@ -80,7 +90,98 @@ body {
   cursor: pointer;
   object-fit: cover;
 }
-.top-nav {
-
+.github-pfp-icon {
+  position: absolute;
+  color: white;
+  bottom: 0.2rem;
+  right: -0.1rem;
+  cursor: pointer;
+}
+.contact-ctn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: 100%;
+}
+.contact-spotify {
+  color: white;
+  font-size: 2.2rem;
+  cursor: pointer;
 }
 
+#hero-section {
+  display: flex;
+  height: 800px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.hero-flex {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+.hero-ctn {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  position: relative;
+  top: 2.2rem;
+}
+.hero-img {
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
+  object-fit: cover;
+}
+.h2-projects {
+  font-size: 2.5rem;
+  color:  var(--clr-white);
+  text-transform: uppercase;
+}
+.projects-img {
+  width: 20rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.hero-ctn-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.2rem;
+}
+.hero-ctn-heading > h3 {
+  color: white;
+  text-transform: uppercase;
+}
+.hero-ctn-heading > button {
+  color: var(--clr-white);
+  font-weight: 500;
+  font-family: var(--font-main);
+  background-color: var(--clr-red);
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.hero-ctn-heading > button:hover {
+  outline: solid var(--clr-white) 1px;
+}
+.hero-ctn > p {
+  color: white;
+  padding: 0.5rem 0.2rem;
+  line-height: 1.5;
+}
+.tech-stack {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 0.2rem;
+  color: var(--clr-white);
+}
