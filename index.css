@@ -147,6 +147,12 @@ body {
   width: 20rem;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+}
+.projects-img:hover {
+  outline: solid var(--clr-red);
+  z-index: 1;
 }
 .hero-ctn-heading {
   width: 100%;
