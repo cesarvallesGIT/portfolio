@@ -314,6 +314,9 @@ body {
     grid-template-rows: 1fr min-content;
     gap: 0rem;
   }
+  .hero-ctn {
+    max-width: 35rem;
+  }
 }
 @media only screen and (max-width: 480px) {
   .info-ctn {
