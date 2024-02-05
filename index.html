@@ -4,24 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>portfolio</title>
   </head>
   <body>
     <div id="app" role="presentation">
-      <section class="sidebar-music-container" id="music-container">
-          <iframe id="iframe" style="border-radius: 0px !important" src="https://open.spotify.com/embed/track/759fzpnRkH3yjHsqBsXwKK?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          <div class="music-controls">
-            <i class="fa-solid fa-backward-step music-icons" id="before"></i>
-            <i class="fa-solid fa-circle-xmark music-icons" title="close" id="close-music"></i>
-            <i class="fa-solid fa-forward-step music-icons" id="after"></i>
-        </div>
-      </section>
       <header class="header">
         <div class="github-user-container">
           <i class="fa-brands fa-github-alt github-pfp-icon" id="github-icon"></i>
@@ -34,73 +27,41 @@
           <button class="sidebar-contact">Linked In</button>
         </div>
       </header>
-      <section id="hero-section">
-        <div class="hero-flex">
-          <div class="hero-ctn">
-              <img id='hero-img' src="https://www.acura.com/-/media/Acura-Platform/Vehicle-Pages/TLX/2024/overview-page/14-Type-S/Acura-2024-TLX-overview-Type-S_XL.jpg" alt="" class="hero-img">
-              <div class="hero-ctn-heading">
-                <h3>IMDB Movie Infotainment</h3>
-                <button>preview</button>
-              </div>
-              <p>Do you own a bakery or cake decorating business? Then Cupcake Ipsum will provide a layer of paragraphs with a pastry chef in mind. This dummy text generator includes words like halvah, tiramisu, macaroon, and other confections that allow you to be sure that your sugary placeholder message resonates with your marketing department.</p>
-              <div class="tech-stack">
-                <i class="fa-brands fa-css3" title="css"></i>
-                <i class="fa-brands fa-react" title="React Javascript"></i>
-                <i class="fa-brands fa-node" title="Node Javascript"></i>
-              </div>
-            
-            </div>
-          <div class="projects-container" id="projects-container">
-              <h2 class="h2-projects">projects</h2>
-              <div class="project-img-ctn" id="first-project">
-                <img src="https://www.acura.com/-/media/Acura-Platform/Vehicle-Pages/TLX/2024/overview-page/14-Type-S/Acura-2024-TLX-overview-Type-S_XL.jpg" alt="" class="projects-img">
-                <div class="no-show selected"><p>selected</p></div>
-              </div>
-              <div class="project-img-ctn" id="second-project">
-                <img class='projects-img' src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2024/civic-si-sedan/Feature-Blades/Ext-Int/Overview/Ext-Int-Overview-A.jpg" alt="">
-                <div class="no-show"><p>selected</p></div>
-              </div>
-              <div class="project-img-ctn" id="third-project">
-                <img src="https://www.acura.com/-/media/Acura-Platform/Vehicle-Pages/INTEGRA/2024/overview-page/Hero/Type-S/Integra-Type-S-Hero-Overview-xl.jpg" alt="" class="projects-img">
-                <div class="no-show"><p>selected</p></div>
-              </div>
-              <div class="project-img-ctn" id="fourth-project">
-                <img class='projects-img' src="https://assets.bosecreative.com/transform/f4b25dd2-7d3a-4302-a474-013558baab7a/COM-3698_S1ProPlus_Situational_3198?io=transform:fill,width:1440,height:1024,gravity:bottomright&format=webp&quality=95" alt="">
-                <div class="no-show"><p>selected</p></div>
-              </div>
-              </div>
-            </div>
+      <section class="hero-section" id="hero-section">
+        <div class="hero-cards-ctn">
+          <div class="aboutme-heading-ctn hero-heading">
+            <h3>Projects</h3>
+          </div>
+          <img  class='arrow-left arrow' src="https://act-webstatic.hoyoverse.com/puzzle/hk4e/pz_I4DPYNZuP5/resource/puzzle/2024/01/25/573689bf17e825e3706cf5c6df7ff835_5663540056377751045.png?x-oss-process=image/format,webp/quality,Q_90" alt="">
+          <div class="hero-card unactive lefty" id="stream-project">
+            <div class="hero-card-border"></div>
+          </div>
+          <div class="hero-card" id="spotify-project">
+            <div class="hero-card-border"></div>
+          </div>
+          <div class="hero-card unactive righty" id="real-project">
+            <div class="hero-card-border"></div>
+          </div>
+          <img  class='arrow-right arrow' src="data:image/webp;base64,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" alt="">
+          <div class="hero-navigation">
+          </div>
         </div>
       </section>
       <main>
-        <section class="info-section">
-          <div class="info-ctn">
-            <img class='info-img' src="https://www.acura.com/-/media/Acura-Platform/Vehicle-Pages/TLX/2024/overview-page/14-Type-S/Acura-2024-TLX-overview-Type-S_XL.jpg" alt="">
-            <div class="info-info-ctn">
-                <h3 class="info-h3">SKILLS & ABOUT ME</h3>
-                <p class="info-p">I am a Frontend Engineer who has a passion for coding websites also im a big Honda enthusiast. My Techinical skills are Html, Css, Javascript, React, Redux, Node Js, RESTFUL APIs, OAuth, Heroku, Git & Github</p>
-                <a href="#" class="info-a">view resume</a>
-            </div>
+        <section class="aboutme-section">
+          <div class="aboutme-heading-ctn">
+            <h3>About me</h3>
           </div>
-          <div class="info-ctn">
-            <img class='info-img' src="https://media.ed.edmunds-media.com/honda/civic/2023/oem/2023_honda_civic_sedan_si_fq_oem_1_1600.jpg" alt="">
-            <div class="info-info-ctn">
-                <h3 class="info-h3">GITHUB</h3>
-                <p class="info-p">Checkout how i code with my github profile, check my proudest repos that are have pinned.</p>
-                <a href="#" class="info-a">view github</a>
-            </div>
-          </div>
-          <div class="info-ctn">
-            <img class='info-img' src="https://preview.redd.it/have-you-heard-reddit-chiakis-journey-is-back-for-season-v0-d2ugjtcarbwa1.png?width=1920&format=png&auto=webp&s=92b3179811b40a231cd6acaab9a28d695a31c5f7" alt="">
-            <div class="info-info-ctn">
-                <h3 class="info-h3">GET IN CONTACT</h3>
-                <p class="info-p">Have any questions? || Want to hire me? Send me an email to get in touch :)</p>
-                <a href="#" class="info-a">send an email</a>
-            </div>
-          </div>
-
         </section>
       </main>
+      <section class="sidebar-music-container" id="music-container">
+        <iframe id="iframe" style="border-radius: 0px !important" src="https://open.spotify.com/embed/track/759fzpnRkH3yjHsqBsXwKK?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="music-controls">
+          <i class="fa-solid fa-backward-step music-icons" id="before"></i>
+          <i class="fa-solid fa-circle-xmark music-icons" title="close" id="close-music"></i>
+          <i class="fa-solid fa-forward-step music-icons" id="after"></i>
+        </div>
+      </section>
     </div>
     <script type="module" src="/index.js"></script>
   </body>
